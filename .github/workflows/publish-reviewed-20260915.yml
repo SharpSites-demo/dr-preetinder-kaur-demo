@@ -1,0 +1,12 @@
+name: Publish reviewed Dr Preetinder Kaur redesign
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/publish-reviewed-20260915.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: SharpSites-demo/sparta-gym-spa-ritik-demo/.github/workflows/publish-reviewed-html.yml@41cd0e039ca25ad2234ffc0978649d9e00875f09
+    with:
+      expected_sha256: 370489328b9d2d76de4d8d6b6ce3f738ab12fd5b5db778f68f6698d0ea018cde
